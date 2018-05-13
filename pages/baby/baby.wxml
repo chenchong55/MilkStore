@@ -15,8 +15,9 @@
     {{ item.price }}元包邮
     </view>
   <view slot="detail-slot" style="margin-top:17px;">
-  <zan-tag type="danger">内附价格图表</zan-tag>\n
-  <zan-tag type="warn">奶粉推荐</zan-tag>
+  <zan-tag type="warn">奶粉推荐</zan-tag>\n
+  <zan-tag type="danger">内附价格图表</zan-tag>
+
 </view>
 </zan-card>
 
