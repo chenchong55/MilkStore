@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/baby/baby",
+    "pages/shop/shop",
+    "pages/toys/toys",
+    "pages/music/music",
+    "pages/content/content"
+  ],
+  "window": {
+    "navigationBarTitleText": "奶粉鉴定师",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false,
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#ededed"
+  },
+  "tabBar": {
+    "selectedColor": "#000000",
+    "borderStyle": "white",
+    "backgroundColor": "#ededed",
+    "list": [
+      {
+        "text": "好奶粉",
+        "pagePath": "pages/baby/baby",
+        "iconPath": "assets/icons/nf.png",
+        "selectedIconPath": "assets/icons/nf_active.png"
+      },
+      {
+        "text": "好玩具",
+        "pagePath": "pages/toys/toys",
+        "iconPath": "assets/icons/wj.png",
+        "selectedIconPath": "assets/icons/toys_active.png"
+      },
+      {
+        "text": "好音乐",
+        "pagePath": "pages/music/music",
+        "iconPath": "assets/icons/music.png",   
+        "selectedIconPath": "assets/icons/music_active.png"
+      },
+      {
+        "text": "好铺子",
+        "pagePath": "pages/shop/shop",
+        "iconPath": "assets/icons/sd.png",
+        "selectedIconPath": "assets/icons/sd_active.png"
+      }
+    ]
+  },
+  "debug": false
+}

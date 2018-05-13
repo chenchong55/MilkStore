@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "zan-panel": "../zanui/panel/index",
+    "zan-tag": "../zanui/tag/index",
+    "zan-button": "../zanui/btn/index"
+  },
+  "navigationBarTitleText": "奶粉推荐"
+}

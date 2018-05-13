@@ -1,0 +1,14 @@
+/* pages/content/content.wxss */
+.other-button-hover {
+  background-color: blue;
+}
+.shuru{
+  position:fixed;
+  height:100rpx;
+  width: 100%;
+  text-align:left;
+  background-color:#efefef;
+  border-top:1px solid #CCC;
+  bottom:0rpx;
+  _position:absolute;
+}

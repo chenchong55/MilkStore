@@ -1,0 +1,25 @@
+
+<scroll-view>
+<navigator class="media-box" url="../content/content?imgUrl={{item.pic_url}}&objectId={{ item.objectId }}&name={{ item.milk_title }}&priceUrl={{ item.price_trend }}&priceCheap={{ item.price_cheap }}&recommend_={{ item.recommend_ }}&recommend={{ item.recommend }}&milk_url={{item.milk_url}}" wx:for="{{ powerList }}" wx:key="{{ item.milk_title }}">
+  <view class="media-box_bd">
+    <zan-card
+  card-class="test-card"
+  thumb="{{ item.pic_url }}"
+  useDetailSlot="{{ true }}"
+>
+<view slot="detail-slot" class="zan-card__detail">
+    {{ item.milk_name }}
+  </view>
+
+  <view slot="detail-slot" class="zan-font-16 zan-c-red " style="margin-top:15px;">
+    {{ item.price }}元包邮
+    </view>
+  <view slot="detail-slot" style="margin-top:17px;">
+  <zan-tag type="danger">内附价格图表</zan-tag>\n
+  <zan-tag type="warn">奶粉推荐</zan-tag>
+</view>
+</zan-card>
+
+  </view>
+</navigator>
+</scroll-view>

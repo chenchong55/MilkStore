@@ -1,0 +1,32 @@
+<view class="container" style="background-color:#fff;">
+   <text>{{text}}</text>
+    <image style="width: 760rpx; height: 780rpx; background-color: #eeeeee;"
+      src="{{ imgUrl }}" mode="scaleToFill" />
+
+</view>
+<view class="textContainer" style="text-align: center; padding-top:30px;">
+
+  <text style="font-size:14px;">{{ name }}</text>
+
+  <zan-tag type="danger">全网最低{{ priceCheap }}月</zan-tag>
+  <image style="width: 760rpx; height: 380rpx; background-color: #eeeeee;"
+    src="{{ priceUrl }}" mode="scaleToFill" />
+
+</view>
+<view style="line-height:28px;letter-spacing:2px; margin-left:14px;margin-right:14px;margin-bottom:20px;">
+  <text style="font-size:16px;" class="zan-font-bold">【奶粉鉴定师】</text>
+    <text style="font-size:16px;">{{ recommend_ }}\n</text>
+    <text style="font-size:16px;" class="zan-c-gray-darker">{{ recommend }}\n</text>
+</view>
+<view class="image">
+  <image src="/assets/images/landscape.png"></image>
+</view>
+<view wx:if="{{ !content_url }}" lass="shuru">
+ <zan-button type="warn"  bindtap="checkon" hover-class="other-button-hover">去看看</zan-button>
+</view>
+<block  wx:if="{{ content_url }}">
+  <web-view src="{{ milk_url }}"></web-view>
+</block>
+<loading hidden="{{hidden}}">
+        加载中...
+</loading>
